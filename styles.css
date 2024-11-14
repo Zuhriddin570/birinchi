@@ -1,0 +1,31 @@
+*{
+    margin: 0;
+}
+body{
+    display: flex;
+    flex-wrap:wrap;
+    gap: 7px;
+    margin: 7px;
+}
+div{
+    background-color: yellow;
+    height: 40px;
+    width: 754px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;;
+    
+}
+.q1{
+    background-color: red;
+}
+.q2{
+    background-color: blue;
+}
+.q3{
+    background-color: green;
+}
+.q4{
+    background-color:yellow
+}
