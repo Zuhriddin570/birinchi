@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shaxmat Doskasi</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f0f0f0;
+        }
+
+        .chess-board {
+            display: grid;
+            grid-template-columns: 30px repeat(8, 70px);
+            grid-template-rows: 30px repeat(8, 70px);
+        }
+
+        /* Boshqa elementlarni ajratish */
+        .board-cell {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .row-label, .col-label {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-weight: bold;
+        }
+
+        .white {
+            background-color: #f0d9b5;
+        }
+
+        .black {
+            background-color: #b58863;
+        }
+
+        .piece {
+            font-size: 50px;
+        }
+
+        .white-label, .black-label {
+            font-size: 20px;
+            color: black;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="chess-board">
+        <!-- Ustki raqamlar -->
+        <div class="board-cell"></div>
+        <div class="col-label">1</div>
+        <div class="col-label">2</div>
+        <div class="col-label">3</div>
+        <div class="col-label">4</div>
+        <div class="col-label">5</div>
+        <div class="col-label">6</div>
+        <div class="col-label">7</div>
+        <div class="col-label">8</div>
+
+        <!-- Shaxmat doskasi -->
+        <!-- 1st row -->
+        <div class="row-label">A</div>
+        <div class="board-cell black piece">♜</div>
+        <div class="board-cell white piece">♞</div>
+        <div class="board-cell black piece">♝</div>
+        <div class="board-cell white piece">♛</div>
+        <div class="board-cell black piece">♚</div>
+        <div class="board-cell white piece">♝</div>
+        <div class="board-cell black piece">♞</div>
+        <div class="board-cell white piece">♜</div>
+
+        <!-- 2nd row -->
+        <div class="row-label">B</div>
+        <div class="board-cell white piece">♟</div>
+        <div class="board-cell black piece">♟</div>
+        <div class="board-cell white piece">♟</div>
+        <div class="board-cell black piece">♟</div>
+        <div class="board-cell white piece">♟</div>
+        <div class="board-cell black piece">♟</div>
+        <div class="board-cell white piece">♟</div>
+        <div class="board-cell black piece">♟</div>
+
+        <!-- 3rd to 6th rows are empty -->
+        <div class="row-label">C</div>
+        <div class="board-cell white"></div>
+        <div class="board-cell black"></div>
+        <div class="board-cell white"></div>
+        <div class="board-cell black"></div>
+        <div class="board-cell white"></div>
+        <div class="board-cell black"></div>
+        <div class="board-cell white"></div>
+        <div class="board-cell black"></div>
+
+        <div class="row-label">D</div>
+        <div class="board-cell black"></div>
+        <div class="board-cell white"></div>
+        <div class="board-cell black"></div>
+        <div class="board-cell white"></div>
+        <div class="board-cell black"></div>
+        <div class="board-cell white"></div>
+        <div class="board-cell black"></div>
+        <div class="board-cell white"></div>
+
+        <!-- 7th row -->
+        <div class="row-label">E</div>
+        <div class="board-cell white piece">♙</div>
+        <div class="board-cell black piece">♙</div>
+        <div class="board-cell white piece">♙</div>
+        <div class="board-cell black piece">♙</div>
+        <div class="board-cell white piece">♙</div>
+        <div class="board-cell black piece">♙</div>
+        <div class="board-cell white piece">♙</div>
+        <div class="board-cell black piece">♙</div>
+
+        <!-- 8th row -->
+        <div class="row-label">F</div>
+        <div class="board-cell black piece">♖</div>
+        <div class="board-cell white piece">♘</div>
+        <div class="board-cell black piece">♗</div>
+        <div class="board-cell white piece">♕</div>
+        <div class="board-cell black piece">♔</div>
+        <div class="board-cell white piece">♗</div>
+        <div class="board-cell black piece">♘</div>
+        <div class="board-cell white piece">♖</div>
+    </div>
+</body>
+
+</html>
