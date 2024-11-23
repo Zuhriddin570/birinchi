@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>5 Yulduz Reyting</title>
+    <style>
+        /* Yulduz umumiy ko‘rinishi */
+        .stars {
+            display: flex;
+            gap: 5px;
+            font-size: 40px; /* Yulduz o‘lchami */
+            cursor: pointer;
+        }
+
+        .star {
+            color: gray; /* Oddiy holatda yulduz rangi */
+            transition: color 0.3s, transform 0.3s;
+        }
+
+        /* Hover qilinganda rangi va kattalashishi */
+        .star:hover,
+        .star:hover ~ .star {
+            color: gold; /* Yulduz rangi hover qilinganda */
+            transform: scale(5); /* Yulduz kattalashadi */  
+        }
+        
+        /* Reytingni bosib tanlaganda rangi o'zgaradi */
+        .star.active {
+            color: rgb(0, 255, 68); /* Tanlangan yulduz rangi */
+        }
+    </style>
+</head>
+<body>
+    <div class="stars">
+        <span class="star" data-value="1">&#9733;</span>
+        <span class="star" data-value="2">&#9733;</span>
+        <span class="star" data-value="3">&#9733;</span>
+        <span class="star" data-value="4">&#9733;</span>
+        <span class="star" data-value="5">&#9733;</span>
+    </div>
+
+    <script>
+        // JavaScript bilan yulduzlarni faol qilish
+        const stars = document.querySelectorAll('.star');
+
+        stars.forEach(star => {
+            star.addEventListener('click', () => {
+                const value = star.getAttribute('data-value');
+                resetStars();
+                highlightStars(value);
+            });
+        });
+
+        function resetStars() {
+            stars.forEach(star => {
+                star.classList.remove('active');
+            });
+        }
+
+        function highlightStars(value) {
+            stars.forEach(star => {
+                if (star.getAttribute('data-value') <= value) {
+                    star.classList.add('active');
+                }
+            });
+        }
+    </script>
+</body>
+</html>
+

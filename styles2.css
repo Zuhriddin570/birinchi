@@ -1,0 +1,110 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    
+  
+    
+}
+
+/*space   */
+.space{
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #e0f7fa;
+    font-size: 1.5rem;
+}
+
+/* Header */
+header {
+    background-color: #00acc1;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    width: 100%;
+    font-size: 1.5rem;
+}
+
+/* Container for Aside and Main */
+.container {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    width: 100%;
+    margin: 20px 0;
+    height: 600px;
+    gap: 20px;
+}
+
+/* Aside */
+aside {
+    background-color: #66bb6a;
+    color: white;
+    flex: 1;
+    padding:2px 20px 1px 50px;
+    text-align: center;
+    margin-right: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    
+}
+
+/* Main Content Area */
+main {
+    flex: 3;
+    background-color: #ffb74d;
+    padding: 10px;
+    display: flex;
+    align-items: end;
+    justify-content: center;
+    justify-content: space-around;
+    justify-content: space-evenly;
+}   
+
+/* Article Section */
+article {
+    color: white;
+    display: flex;
+ flex-direction: column;
+ align-items: center;
+ justify-content: end;
+
+}
+
+
+/* Images Section */
+.images {
+    display: flex;
+    gap: 20px;
+    
+    margin-top: 10px;
+}
+
+.images div {
+    background-color: #fff176;
+    color: #000;
+    flex: 1;
+    margin: 0 5px;
+    text-align: center;
+    padding: 70px;
+    box-sizing: border-box;
+}
+
+/* Footer */
+footer {
+    background-color: #00acc1;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    width: 100%;
+    margin-top: auto;
+    font-size: 1.5rem;
+}
+h2{
+  text-align: center;
+}
